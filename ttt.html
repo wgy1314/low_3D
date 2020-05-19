@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: black;
+        }
+        .btn{
+            position: relative;
+            display: block;
+            text-decoration: none;
+            left: 50%;
+            top: 50%;
+            width: 600px;
+            height: 100px;
+            font-size: 24px;
+            text-align: center;
+            line-height: 100px;
+            background : linear-gradient(90deg, #03a9f4 ,#f441a5, #ffeb3b,#03a9f4);
+            background-size: 600%;
+            outline: none;
+            color: #fff;
+            border-radius: 50px;
+            transform: translate(-50%,-50%); 
+            border: none;
+            text-transform: uppercase;
+           
+        }
+        .btn::after{
+            content: "";
+            position: absolute;
+            left: -5px;
+            top: -5px;
+            right: -5px;
+            bottom: -5px;
+            background : linear-gradient(90deg, #03a9f4 ,#f441a5, #ffeb3b,#03a9f4);
+            background-size: 600%;
+            border-radius: 50px;
+            filter:blur(20px);
+            opacity: 0.3;
+            z-index: -10;
+        }
+        .btn::after{
+            animation: sun 8s ease-in-out infinite;
+        }
+        .btn:hover{
+             animation: sun 8s ease-in-out infinite;
+        }
+        @keyframes sun { 
+            to{ 
+                background-position : -600% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+     
+        <a href="javascript:;" class="btn">WHAT THING</a> 
+     
+    <script>
+
+    </script>
+</body>
+</html>
